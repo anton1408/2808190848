@@ -1,23 +1,19 @@
 <template>
   <div class="chat-header">
 
-    <div class="chat-header__chat-avatar chat-avatar">
-      <img src="" alt="">
-    </div>
-
-    <div class="chat-header__chat-title chat-title">
-      <div class="chat-title__manager-name">
-        <p>Вероника Ростова</p>
-      </div>
-
-      <div class="chat-title__manager-message">
-        <p>Менеджер по продажам </p>
+    <div class="chat-title">
+      <img class="chat-title__manager-avatar" :src="managerAvatar" alt="фото менеджера">
+      <div class="chat-title__manager-info">
+        <p class="chat-title__manager-name">{{ managerName }}</p>
+        <p class="chat-title__manager-position">{{ managerPosition }}</p>
       </div>
 
       <div class="chat-title__manager-services">
-        <p>Подберу для вас самые лучшие предложения. Мои услуги абсолютно</p>
+        <p>{{ managerServices }}</p>
       </div>
+
     </div>
+
     <hr>
   </div>
 </template>
@@ -30,7 +26,10 @@ export default {
   },
   data() {
     return {
-
+      managerAvatar: 'assets/img/manager-avatar.jpg',
+      managerName: 'Вероника Ростова',
+      managerPosition: 'Менеджер по продажам',
+      managerServices: 'Подберу для вас самые лучшие предложения. Мои услуги абсолютно бесплатны'
     }
   },
   methods: {
