@@ -73,8 +73,6 @@ chat-title__right-column {}
     margin-top: -2px;
 }
 .chat-title__manager-services {
-  line-height: 19px;
-  font-size: 14px;
   background-color: #fffbc8;
   border: 1px solid #cecabf;
   border-radius: 5px;
@@ -84,9 +82,9 @@ chat-title__right-column {}
   margin-left: -45px;
   width: 365px;
   height: 56px;
-  box-sizing: border-box;
-}
-.chat-title__manager-services p {
-
+  p {
+    line-height: 19px;
+    font-size: 14px;
+  }
 }
 </style>
