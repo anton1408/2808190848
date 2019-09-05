@@ -6,7 +6,7 @@
       <p>{{ message.message }}</p>
       <hr>
     </div>
-    <make-message @message-added="addMessage"></make-message>
+    <send-message @adding-message="addMessage"></send-message>
   </div>
 
 </template>

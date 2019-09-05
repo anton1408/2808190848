@@ -1,6 +1,6 @@
 <template>
-  <div class="make-message-wrapper">
-    <form class="make-message" @submit.prevent="onSubmit">
+  <div class="send-message-wrapper">
+    <form class="send-message" @submit.prevent="onSubmit">
       <textarea name="" id="" cols="30" rows="10"
                 v-model="message">
       </textarea>
@@ -12,7 +12,7 @@
 
 <script>
   export default {
-    name: "MakeMessage",
+    name: "SendMessage",
     data() {
       return {
         message: null,
@@ -32,7 +32,7 @@
             date: date,
             userName: this.userName
           }
-          this.$emit('message-added', newMessage),
+          this.$emit('adding-message', newMessage),
           this.message = null,
             this.date = null
         }
