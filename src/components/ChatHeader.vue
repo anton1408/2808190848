@@ -42,34 +42,51 @@ export default {
   }
 }
 </script>
-<!--
+
 <style lang="scss" scoped>
-  .chat-header {
-    padding: 20px;
-    position: relative;
-  }
-  .chat-title__manager-avatar {
+.chat-title {
+    display: flex;
+}
+.chat-title__left-column {
+    margin-right: 10px;
+}
+chat-title__right-column {}
+.chat-title__manager-avatar {
     border-radius: 100%;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-  }
-  .chat-title__manager-info {
-    width: 170px;
-    margin-left: auto;
-  }
-  .chat-title__manager-name {
+    width: 120px;
+    height: 120px;
+    margin-top: -4px;
+    position: relative;
+    z-index: 10;
+}
+.chat-title__manager-info {
+  margin-bottom: 7px;
+}
+.chat-title__manager-name {
     font-size: 16px;
-  }
-  .chat-title__manager-position {
+    line-height: 23px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.chat-title__manager-position {
     font-size: 12px;
-  }
-  .chat-title__manager-services {
-    font-size: 14px;
-  }
-  .chat-title__manager-services {
-    background-color: #fffbc8;
-    border: 1px solid #cecabf;
-  }
+    margin-top: -2px;
+}
+.chat-title__manager-services {
+  line-height: 19px;
+  font-size: 14px;
+  background-color: #fffbc8;
+  border: 1px solid #cecabf;
+  border-radius: 5px;
+  padding-right: 0;
+  padding-top: 9px;
+  padding-left: 44px;
+  margin-left: -45px;
+  width: 365px;
+  height: 56px;
+  box-sizing: border-box;
+}
+.chat-title__manager-services p {
+
+}
 </style>
--->

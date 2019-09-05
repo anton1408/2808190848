@@ -8,7 +8,7 @@ import './scss/main.scss'
 import './css/main.css'
 
 // Bootstrap
- import './bootstrap/css/bootstrap-reboot.min.css'
+//import './bootstrap/css/bootstrap-reboot.min.css'
 
 // Vue.js
 window.Vue = require('vue')
