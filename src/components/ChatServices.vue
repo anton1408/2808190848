@@ -45,39 +45,39 @@
 
 <style lang="scss" scoped>
   .services {
-    width: 65%;
     margin: 0px 20px 22px auto;
+    width: 65%;
   }
   .services__title {
-    text-align: right;
     font-size: 13px;
-    padding-right: 35px;
-    padding-bottom: 12px;
     line-height: 5px;
+    padding-bottom: 12px;
+    padding-right: 35px;
+    text-align: right;
   }
   .services__schedule {
     border-bottom: 1px solid #cccccc;
     border-top: 1px solid #cccccc;
     display: flex;
     justify-content: space-between;
-    padding-top: 15px;
-    padding-bottom: 15px;
     margin-bottom: 12px;
+    padding-bottom: 15px;
+    padding-top: 15px;
 
     .services__schedule-right-col {
       width: 32%;
       .services__item, { p {text-align: center;} }
     }
     .services__schedule-left-col {
-      width: 68%;
       margin-left: -1px;
+      width: 68%;
     }
     .services__schedule-left-col::before {
       background-color: rgba(83,83,83,0.4);
       content: '';
-      width: 1px;
       height: 76px;
       position: absolute;
+      width: 1px;
 
     }
   }
@@ -90,22 +90,22 @@
     position: relative;
     p {
       font-size: 13px;
-      padding-left: 6px;
       line-height: 24px;
+      padding-left: 6px;
     }
   }
 
   .services__schedule-left-col .services__item::before {
-    content: "";
-    border-radius: 0px 3px 3px 0px;
-    position: absolute;
-    height: 24px;
     background-color: #ace2f8;
+    border-radius: 0px 3px 3px 0px;
+    content: "";
+    height: 24px;
+    position: absolute;
     z-index: -10;
   }
   .services__schedule-left-col .services__item:nth-child(1)::before {
-    width: 101%;
     background-color: #b1e19b;
+    width: 101%;
   }
   .services__schedule-left-col .services__item:nth-child(2)::before {
     width: 25%;
@@ -119,8 +119,8 @@
     justify-content: space-between;
 
     .services__total-left-col {
-      width: 68%;
       margin-left: -1px;
+      width: 68%;
     }
     .services__total-right-col {
       width: 32%;

@@ -20,7 +20,7 @@
       </div>
     </div>
 
-    <send-message @adding-message="addMessage"></send-message>
+    <chat-send-message @adding-message="addMessage"></chat-send-message>
   </div>
 
 </template>
@@ -58,9 +58,6 @@
 </script>
 
 <style lang="scss" scoped>
-  .chat-body {
-
-  }
   .chat-body__header {
     display: flex;
     justify-content: space-between;
@@ -73,8 +70,8 @@
         margin-right: 5px;
       }
       p a {
-        font-size: 14px;
         color: #005da1;
+        font-size: 14px;
       }
     }
     .chat-body__right-col {
@@ -112,21 +109,21 @@
     margin-bottom: 24px;
   }
   .chat-body__message-header {
-   margin-bottom: 11px;
+    margin-bottom: 11px;
  }
   .chat-body__user-name {
     font-size: 14px;
     font-weight: bold;
   }
   .chat-body__message-date {
-    font-size: 11px;
     color: #808080;
+    font-size: 11px;
   }
   .chat-body__message {
-    border: 1px solid #d1d2d2;
     background-color: #f2fbff;
-    padding: 15px 15px 10px 15px;
+    border: 1px solid #d1d2d2;
     margin-bottom: 17px;
+    padding: 15px 15px 10px 15px;
 
     p {
       font-size: 14px;
@@ -136,9 +133,9 @@
   .chat-body__message::before,
   .chat-body__message::after {
     content: "";
-    width: 10px;
     display: block;
     position: absolute;
+    width: 10px;
 
   }
   .chat-body__message::before {
@@ -146,16 +143,16 @@
     border-left: 1px solid #d1d2d2;
     border-top: 1px solid #d1d2d2;
     height: 10px;
-    transform: rotate(45deg);
     top: -6px;
+    transform: rotate(45deg);
   }
   .chat-body__message::after {
     background-color: white;
-    border-right: 1px solid #d1d2d2;
     border-bottom: 1px solid #d1d2d2;
+    border-right: 1px solid #d1d2d2;
     height: 7px;
-    top: -8px;
     left: 10px;
+    top: -8px;
   }
   @media screen and (max-width: 380px) {
     .chat-body__header {

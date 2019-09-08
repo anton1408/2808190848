@@ -16,9 +16,9 @@ window.Vue = require('vue')
 
 // Vue components (for use in html)
 Vue.component('chat-header', require('./components/ChatHeader.vue').default)
-Vue.component('services', require('./components/Services.vue').default)
-Vue.component('messages', require('./components/Messages.vue').default)
-Vue.component('send-message', require('./components/SendMessage.vue').default)
+Vue.component('chat-services', require('./components/ChatServices.vue').default)
+Vue.component('chat-body', require('./components/ChatBody.vue').default)
+Vue.component('chat-send-message', require('./components/ChatSendMessage.vue').default)
 
 
 

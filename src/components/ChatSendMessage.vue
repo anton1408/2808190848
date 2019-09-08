@@ -63,24 +63,24 @@
     padding: 27px 20px 35px;
 
     textarea {
-      outline: none;
-      box-sizing: border-box;
       border-radius: 3px;
+      box-sizing: border-box;
       display: block;
-      resize: none;
-      width: 100%;
       margin-bottom: 25px;
       min-height: 65px;
+      outline: none;
+      resize: none;
+      width: 100%;
     }
     .send-message__submit-wrp {
     }
     .send-message__submit-btn {
       background-color: #fdd639;
-      border: none;
       border-radius: 25px;
+      border: none;
       display: block;
-      outline: none;
       margin: 0px auto;
+      outline: none;
     }
     .send-message__submit-btn[value] {
       font-size: 15px;
