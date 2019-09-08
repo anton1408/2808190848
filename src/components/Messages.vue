@@ -11,8 +11,7 @@
       </div>
     </div>
 
-    <div class="chat-body__messages" v-for="(message, index) in allMessages"
-                                    :key="index">
+    <div class="chat-body__message-wrapper" v-for="(message, index) in allMessages">
       <div class="chat-body__message-header">
         <p><span class="chat-body__user-name">{{ message.userName }}</span> <span class="chat-body__message-date">{{ message.date }}</span></p>
       </div>
@@ -59,11 +58,13 @@
 </script>
 
 <style lang="scss" scoped>
+  .chat-body {
+
+  }
   .chat-body__header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
-
+    margin: 0px 20px 10px 20px;
     .chat-body__left-col {
       display: flex;
       p:first-child {
@@ -104,7 +105,13 @@
    position: relative;
    top: 4px;
  }
- .chat-body__message-header {
+  .chat-body__message-wrapper {
+    margin: 0px 20px;
+  }
+  .chat-body__message-wrapper:last-child {
+    margin-bottom: 24px;
+  }
+  .chat-body__message-header {
    margin-bottom: 11px;
  }
   .chat-body__user-name {
@@ -149,5 +156,10 @@
     height: 7px;
     top: -8px;
     left: 10px;
+  }
+  @media screen and (max-width: 380px) {
+    .chat-body__header {
+      display: block;
+    }
   }
 </style>

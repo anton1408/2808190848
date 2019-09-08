@@ -44,47 +44,57 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.chat-title {
+  .chat-title {
     display: flex;
-}
-.chat-title__left-column {
+    margin-top: 20px;
+    justify-content: center;
+    padding: 0 20px;
+
+  }
+  .chat-title__left-column {
     margin-right: 10px;
-}
-chat-title__right-column {}
-.chat-title__manager-avatar {
+  }
+  .chat-title__right-column {}
+  .chat-title__manager-avatar {
     border-radius: 100%;
     width: 120px;
     height: 120px;
     margin-top: -4px;
     position: relative;
     z-index: 10;
-}
-.chat-title__manager-info {
-  margin-bottom: 7px;
-}
-.chat-title__manager-name {
+  }
+  .chat-title__manager-info {
+    margin-bottom: 7px;
+  }
+  .chat-title__manager-name {
     font-size: 16px;
     line-height: 23px;
     font-weight: bold;
     margin-bottom: 5px;
-}
-.chat-title__manager-position {
+  }
+  .chat-title__manager-position {
     font-size: 12px;
     margin-top: -2px;
-}
-.chat-title__manager-services {
-  background-color: #fffbc8;
-  border: 1px solid #cecabf;
-  border-radius: 5px;
-  padding-right: 0;
-  padding-top: 9px;
-  padding-left: 44px;
-  margin-left: -45px;
-  width: 365px;
-  height: 56px;
-  p {
-    line-height: 19px;
-    font-size: 14px;
+  }
+  .chat-title__manager-services {
+    background-color: #fffbc8;
+    border: 1px solid #cecabf;
+    border-radius: 5px;
+    padding-bottom: 7px;
+    padding-right: 10px;
+    padding-top: 9px;
+    padding-left: 44px;
+    margin-left: -45px;
+    max-width: 365px;
+    min-height: 56px;
+    p {
+      line-height: 19px;
+      font-size: 14px;
+    }
+  }
+@media screen and (max-width: 483px) {
+  .chat-title {
+    margin-bottom: 15px;
   }
 }
 </style>

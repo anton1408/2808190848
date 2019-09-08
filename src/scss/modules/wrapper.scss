@@ -1,4 +1,7 @@
 .chat-wrapper {
-  width: 490px;
-  padding: 20px 20px;
+  min-width: 360px;
+  max-width: 720px;
+  margin-right: auto;
+  margin-left: auto;
+  //padding: 20px 20px;
 }

@@ -45,9 +45,8 @@
 
 <style lang="scss" scoped>
   .services {
-    width: 320px;
-    margin-left: auto;
-    margin-bottom: 22px;
+    width: 65%;
+    margin: 0px 20px 22px auto;
   }
   .services__title {
     text-align: right;
@@ -105,42 +104,41 @@
     z-index: -10;
   }
   .services__schedule-left-col .services__item:nth-child(1)::before {
-    width: 218px;
+    width: 101%;
     background-color: #b1e19b;
   }
   .services__schedule-left-col .services__item:nth-child(2)::before {
-    width: 53px;
+    width: 25%;
   }
   .services__schedule-left-col .services__item:nth-child(3)::before {
-    width: 35px;
+    width: 16%;
   }
 
-.services__total {
-  display: flex;
-  justify-content: space-between;
+  .services__total {
+    display: flex;
+    justify-content: space-between;
 
-  .services__total-left-col {
-    width: 68%;
-    margin-left: -1px;
-  }
-  .services__total-right-col {
-    width: 32%;
-  }
+    .services__total-left-col {
+      width: 68%;
+      margin-left: -1px;
+    }
+    .services__total-right-col {
+      width: 32%;
+    }
 
-  .services__total-left-col,
-  .services__total-right-col {
-    p {
-      font-size: 16px;
-      font-weight: bold;
-      line-height: 20px;
+    .services__total-left-col,
+    .services__total-right-col {
+      p {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 20px;
+      }
+    }
+    .services__total-right-col {
+      p {
+        text-align: center;
+      }
     }
   }
-  .services__total-right-col {
-    p {
-      text-align: center;
-    }
-  }
-
-}
 
 </style>
