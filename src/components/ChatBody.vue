@@ -62,29 +62,28 @@
     display: flex;
     justify-content: space-between;
     margin: 0px 20px 10px 20px;
-    .chat-body__left-col {
-      display: flex;
-      p:first-child {
-        font-size: 16px;
-        font-weight: bold;
-        margin-right: 5px;
-      }
-      p a {
-        color: #005da1;
-        font-size: 14px;
-      }
+  }
+  .chat-body__left-col {
+    display: flex;
+    p:first-child {
+      font-size: 16px;
+      font-weight: bold;
+      margin-right: 5px;
     }
-    .chat-body__right-col {
-      display: flex;
-      .chat-body__quantity-likes {
-        margin-right: 18px;
-      }
-      .chat-body__quantity-messages {
-        margin-right: 2px;
-      }
+    p a {
+      color: #005da1;
+      font-size: 14px;
     }
   }
-
+  .chat-body__right-col {
+    display: flex;
+    .chat-body__quantity-likes {
+      margin-right: 18px;
+    }
+    .chat-body__quantity-messages {
+      margin-right: 2px;
+    }
+  }
  .chat-body__quantity-likes,
  .chat-body__quantity-messages {
    p {

@@ -8,7 +8,7 @@ import './scss/main.scss'
 import './css/main.css'
 
 // Bootstrap
-//import './bootstrap/css/bootstrap-reboot.min.css'
+//import './bootstrap/css/bootstrap.min.css'
 
 // Vue.js
 window.Vue = require('vue')
@@ -20,15 +20,11 @@ Vue.component('chat-services', require('./components/ChatServices.vue').default)
 Vue.component('chat-body', require('./components/ChatBody.vue').default)
 Vue.component('chat-send-message', require('./components/ChatSendMessage.vue').default)
 
-
-
 // Vue init
 var app = new Vue({
   el: '#app',
   data: {
-
   },
   methods: {
-
   }
 })
