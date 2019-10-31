@@ -20,3 +20,5 @@ npm run build
 * `src/components`  - folder with custom `.vue` components
 * `src/store`       - app store for vue (empty)
 * `static/`         - folder with extra static assets that will be copied into output folder
+
+test2
